@@ -8,9 +8,7 @@ LTI 1.3 functionality
 Requirements
 As a DA I want a system that auto populate my course name and number 
 
-Each OTJ record should be pinned to specific KSBs that are being developed over time 
-
-  Maybe a later version of OTJ Tracking (JH) 
+Each OTJ record should be pinned to specific KSBs that are being developed over time - Maybe a later version of OTJ Tracking (JH) 
   
 As a DA I want a dashboard that show apprentices their target OTJ hours to date, and the hours they have logged as progression towards this. 
 
