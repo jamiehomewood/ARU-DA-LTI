@@ -18,77 +18,77 @@
                 </div>
                 <div class="card-body">
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Date</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                        <label for="otj-date" class="form-label">Date</label>
+                        <input type="text" class="form-control" id="otj-date" placeholder="">
                     </div>
 
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Start Time</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                        <input type="text" class="form-control" id="otj-start-time" placeholder="">
                     </div>
 
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Duration</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                        <label for="otj-duration" class="form-label">Duration (mins)</label>
+                        <input type="text" class="form-control" id="otj-duration" placeholder="">
                     </div>
 
                     <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Description</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for="otj-desc" class="form-label">Description</label>
+                        <textarea class="form-control" id="otj-desc" rows="3"></textarea>
                     </div>
                     <div class="mb-3">
 
                         <label for="exampleFormControlTextarea1"><strong>What type of OTJ Hours was it?</strong></label>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="otj-type-conf">
+                            <label class="form-check-label" for="otj-type-conf">
                                 Conference Calls for Apprenticeship Project Work
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="otj-type-task-proj">
+                            <label class="form-check-label" for="otj-type-task-proj">
                                 Individual Assignment Or Task (Project)
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="otj-type-conf-task-proj">
+                            <label class="form-check-label" for="otj-type-conf-task-proj">
                                 Individual Assignment Or Task (Witness Testimony)
                             </label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="otj-type-conf-task-indiv-proj">
+                            <label class="form-check-label" for="otj-type-conf-task-indiv-proj">
                                 Individual Assignment Or Task (Work Product)
                             </label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="otj-type-conf-meeting">
+                            <label class="form-check-label" for="otj-type-conf-meeting">
                                 Meetings to Complete Apprenticeship Project Work
                             </label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="otj-type-monitor">
+                            <label class="form-check-label" for="otj-type-monitor">
                                 Montoring/Coaching Activities
                             </label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="otj-type-pers-dev">
+                            <label class="form-check-label" for="otj-type-pers-dev">
                                 Personal Development Events Linked to Standard
                             </label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="otj-type-reg">
+                            <label class="form-check-label" for="otj-type-reg">
                                 Register Session
                             </label>
                         </div>
@@ -140,9 +140,9 @@
                     <tr>
                         <td width="40%">
                             <strong>My Title</strong><br>My OTJ Type<br>
-                            <button type="button" class="btn btn-warning btn-sm" href="#" data-toggle="modal" data-target="#editotjModal">View</button>
-                            <button type="button" class="btn btn-success btn-sm" href="#" data-toggle="modal" data-target="#editotjModal">Edit</button>
-                            <button type="button" class="btn btn-danger btn-sm" href="#" data-toggle="modal" data-target="#editotjModal">Remove</button>
+                                    <button type="button" id="viewButton-1" class="btn btn-warning btn-sm" href="#" data-toggle="modal" data-target="#editotjModal">View</button>
+                                    <button type="button" id="editButton-1" class="btn btn-success btn-sm" href="#" data-toggle="modal" data-target="#editotjModal">Edit</button>
+                                    <button type="button" id="removeButton-1" class="btn btn-danger btn-sm" href="#" data-toggle="modal" data-target="#editotjModal">Remove</button>
                         </td>
                         <td>07/03/2023</td>
                         
@@ -152,9 +152,9 @@
                     <tr>
                         <td width="40%">
                             <strong>My Title 2</strong><br>My OTJ Type<br>
-                            <button type="button" class="btn btn-warning btn-sm" href="#" data-toggle="modal" data-target="#editotjModal">View</button>
-                            <button type="button" class="btn btn-success btn-sm" href="#" data-toggle="modal" data-target="#editotjModal">Edit</button>
-                            <button type="button" class="btn btn-danger btn-sm" href="#" data-toggle="modal" data-target="#editotjModal">Remove</button>
+                                    <button type="button" id="viewButton=2" class="btn btn-warning btn-sm" href="#" data-toggle="modal" data-target="#editotjModal">View</button>
+                                    <button type="button" id="editButton-2" class="btn btn-success btn-sm" href="#" data-toggle="modal" data-target="#editotjModal">Edit</button>
+                                    <button type="button" id="removeButton-2" class="btn btn-danger btn-sm" href="#" data-toggle="modal" data-target="#editotjModal">Remove</button>
                         </td>
                         <td>01/04/2023</td>
                         
@@ -164,9 +164,9 @@
                     <tr>
                         <td width="40%">
                             <strong>My Title 3</strong><br>My OTJ Type<br>
-                            <button type="button" class="btn btn-warning btn-sm" href="#" data-toggle="modal" data-target="#editotjModal">View</button>
-                            <button type="button" class="btn btn-success btn-sm" href="#" data-toggle="modal" data-target="#editotjModal">Edit</button>
-                            <button type="button" class="btn btn-danger btn-sm" href="#" data-toggle="modal" data-target="#editotjModal">Remove</button>
+                                    <button type="button" id="viewButton-3" class="btn btn-warning btn-sm" href="#" data-toggle="modal" data-target="#editotjModal">View</button>
+                                    <button type="button" id="editButton-3" class="btn btn-success btn-sm" href="#" data-toggle="modal" data-target="#editotjModal">Edit</button>
+                                    <button type="button" id="removeButton-3" class="btn btn-danger btn-sm" href="#" data-toggle="modal" data-target="#editotjModal">Remove</button>
                         </td>
                         <td>01/06/2023</td>
 

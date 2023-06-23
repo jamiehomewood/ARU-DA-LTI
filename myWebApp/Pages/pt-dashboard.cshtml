@@ -1,0 +1,84 @@
+﻿@page
+@model myWebApp.Pages.pt_dashboardModel
+@{
+}
+
+<!-- Begin Page Content -->
+<div class="container-fluid">
+
+    <!-- Content Row -->
+
+ 
+
+        <!-- end of content row-->
+        <!-- List Heading -->
+        <h1 class="h3 mb-2 text-gray-800">Cohort for course 12345: Course Name</h1>
+        <p class="mb-4">Below displays a list of students within this cohort.</p>
+
+        <!-- DataTales Example -->
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Student List</h6>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Student Name</th>
+                                <th>Student ID</th>
+                                <th>Target Hours</th>
+                                <th>Hours tracked</th>
+                                <th>Progress Towards OTJ Hours</th>
+                                <th>Pending</th>
+
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                            <th>Student Name</th>
+                            <th>Student ID</th>
+                            <th>Target Hours</th>
+                            <th>Hours tracked</th>
+                            <th>Progress Towards OTJ Hours</th>
+                            <th>Pending</th>
+
+                            </tr>
+                        </tfoot>
+                        <tbody id="otj_list">
+
+                            <!--start of otj list-->
+                            <tr>
+                                <td>Billy Bob</td>
+                                <td>1234567</td>
+                                <td>730</td>
+                                <td>130</td>
+                                <td>30%</td>
+                                <td>7</td>
+
+                            </tr>
+                            <tr>
+                                <td>fred Flint</td>
+                                <td>45643</td>
+                                <td>450</td>
+                                <td>130</td>
+                                <td>50%</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Jane Doe</td>
+                                <td>99999</td>
+                                <td>240</td>
+                                <td>23</td>
+                                <td>12%</td>
+                                <td>1</td>
+                            </tr>
+                            <!--end of otj list-->
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>

@@ -37,15 +37,15 @@
             <li class="nav-item active">
                 <a class="nav-link" href="index">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span>
+                    <span>Student Dashboard</span>
                 </a>
             </li>
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="otj_tracking">
+                <a class="nav-link" href="pt-dashboard">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>OTJ Tracking</span>
+                    <span>Personal Tutor Dashboard</span>
                 </a>
             </li>
 
@@ -719,18 +719,32 @@
         </div>
     </div>
 
-    <!-- Core plugin JavaScript-->
-    <script src="~/js/vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for all pages-->
-    <script src="~/js/sb-admin-2.min.js"></script>
-
-    <!-- Page level plugins -->
-
+    <!-- Page level plugins -->   
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/sb-admin-2.min.js"></script>
+    <script src="~/js/jquery.easing.min.js"></script>
+
+    
 
     @await RenderSectionAsync("Scripts", required: false)
+
+    <script>
+        $(document).ready(function () {
+            $("#editButton").click(function () {
+                $("#editotjModal").modal('show');
+            });
+
+            $("#viewButton").click(function () {
+                $("#editotjModal").modal('show');
+            });
+
+            $("#removeButton").click(function () {
+                $("#editotjModal").modal('show');
+            });
+        });
+    </script>
 </body>
 </html>
