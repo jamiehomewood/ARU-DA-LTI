@@ -1,0 +1,186 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "OTJ Tracking";
+}
+
+<!-- Begin Page Content -->
+<div class="container-fluid">
+
+    <!-- Content Row -->
+
+    <div class="row">
+        <div class="col-xl-12 col-lg-12">
+            <!-- Basic Card Example -->
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Track an OTJ</h6>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Date</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Start Time</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Duration</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+
+                        <label for="exampleFormControlTextarea1"><strong>What type of OTJ Hours was it?</strong></label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Conference Calls for Apprenticeship Project Work
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Individual Assignment Or Task (Project)
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Individual Assignment Or Task (Witness Testimony)
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Individual Assignment Or Task (Work Product)
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Meetings to Complete Apprenticeship Project Work
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Montoring/Coaching Activities
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Personal Development Events Linked to Standard
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Register Session
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="mb-3">
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                        <button class="btn btn-primary" type="submit">Batch Add</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- end of content row-->
+        <!-- List Heading -->
+        <h1 class="h3 mb-2 text-gray-800">Your Off the Job Hours</h1>
+        <p class="mb-4">Below displays a list of the off the job hours you have entered.  These are then recorded and removed from your required amount of hours you need in order to progress.</p>
+
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Off the job hours</h6>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>OTJ Type</th>
+                        <th>Date</th>
+                        <th>Duration</th>
+                        <th>State</th>
+
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>OTJ Type</th>
+                        <th>Date</th>
+                        <th>Duration</th>
+                        <th>State</th>
+
+                    </tr>
+                </tfoot>
+                <tbody id="otj_list">
+
+                    <!--start of otj list-->
+                    <tr>
+                        <td width="40%">
+                            <strong>My Title</strong><br>My OTJ Type<br>
+                            <button type="button" class="btn btn-warning btn-sm" href="#" data-toggle="modal" data-target="#editotjModal">View</button>
+                            <button type="button" class="btn btn-success btn-sm" href="#" data-toggle="modal" data-target="#editotjModal">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm" href="#" data-toggle="modal" data-target="#editotjModal">Remove</button>
+                        </td>
+                        <td>07/03/2023</td>
+                        
+                        <td>1 hour 20 mins</td>
+                        <td>Accepted</td>
+                    </tr>
+                    <tr>
+                        <td width="40%">
+                            <strong>My Title 2</strong><br>My OTJ Type<br>
+                            <button type="button" class="btn btn-warning btn-sm" href="#" data-toggle="modal" data-target="#editotjModal">View</button>
+                            <button type="button" class="btn btn-success btn-sm" href="#" data-toggle="modal" data-target="#editotjModal">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm" href="#" data-toggle="modal" data-target="#editotjModal">Remove</button>
+                        </td>
+                        <td>01/04/2023</td>
+                        
+                        <td>20 mins</td>
+                        <td>Accepted</td>
+                    </tr>
+                    <tr>
+                        <td width="40%">
+                            <strong>My Title 3</strong><br>My OTJ Type<br>
+                            <button type="button" class="btn btn-warning btn-sm" href="#" data-toggle="modal" data-target="#editotjModal">View</button>
+                            <button type="button" class="btn btn-success btn-sm" href="#" data-toggle="modal" data-target="#editotjModal">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm" href="#" data-toggle="modal" data-target="#editotjModal">Remove</button>
+                        </td>
+                        <td>01/06/2023</td>
+
+                        <td>45 mins</td>
+                        <td>Accepted</td>
+                    </tr>
+                    <!--end of otj list-->
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+                </div>
+
+
